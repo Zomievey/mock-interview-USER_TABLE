@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+React.js / TypeScript Technical Interview Prompt:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Objective: In this interview, you'll be assessed on your ability to design, implement, and optimize a simple React.js application using TypeScript. The goal is to evaluate your skills in component architecture, state management, TypeScript typings, and testing practices.
 
-In the project directory, you can run:
+Part 1: Build a User Management Dashboard (45 minutes)
 
-### `npm start`
+Scenario:
+You're tasked with creating a user management dashboard for a small app. The dashboard will display a list of users, allow for searching and sorting by name, and enable basic editing of user information. The app should be performant and maintainable, following best practices in React and TypeScript.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Requirements:
+1. Display a List of Users
+Fetch a list of users from a mock API (you can use the placeholder API below).
+Display the user’s name, email, and role in a table format.
+Mock API endpoint: https://jsonplaceholder.typicode.com/users
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Search Functionality
+Implement a search bar that filters the user list by name. Ensure that the search is case-insensitive.
 
-### `npm test`
+3. Sorting
+Implement sorting functionality for the user’s name and email. Users should be able to toggle between ascending and descending order.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Editing User Information
+When a user clicks the “Edit” button for a specific row, allow them to edit the user's name, email, and role fields in the table.
+Once the fields are edited, show an “Update” button to save the changes locally (you don't need to persist data to the backend).
 
-### `npm run build`
+5. TypeScript
+Use TypeScript to define types for the user data and component props.
+Ensure that your code leverages TypeScript's type-checking features to avoid runtime errors.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. Bonus:
+Add basic form validation (e.g., ensure the email is valid).
+Implement a loading state while fetching users.
+Add unit tests for one of the core components (e.g., the search or sort functionality) using a testing library like Jest or React Testing Library.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Part 2: Discussion & Optimization (15 minutes)
+Code Review: Walk through your code and explain your design choices, how you handled state management, and any challenges you faced during implementation.
+Optimization: If given more time, how would you optimize the app for performance and scalability?
+Advanced Topics: Be ready to discuss topics such as:
+Memoization (e.g., using React.memo, useMemo, useCallback)
+Error handling strategies in React
+How TypeScript improves development in a React application
+State management approaches (local state vs. context API vs. external libraries like Redux)
